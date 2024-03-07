@@ -1,14 +1,40 @@
 import styled from "styled-components";
 
 // Componente funcional Header
+const Header = (props) => {
+  return (
+    <Container>
+      {/* Logo */}
+      <Logo>
+        <a href="/">
+          {/* Imagem do Logo */}
+          <img src="/images/Tree.png" alt="" />
+        </a>
+      </Logo>
 
+      {/* Menu de Navegação */}
+      <NavMenu>
+        {/* Links de Navegação */}
+        <a href="/">
+          <span>Home</span>
+        </a>
+        <a href="/about">
+          <span>About Us</span>
+        </a>
+        <a href="/contact">
+          <span>Contact Us</span>
+        </a>
+      </NavMenu>
 
-
-
-// 2ª Digitação
-
-
-
+      {/* Wrapper adicional */}
+      <Wrap>Hi</Wrap>
+     
+      {/* Botão de Login */}
+      <Login>Login</Login>
+    </Container>
+  );
+};
+ 
 
 // Styled-Components
 

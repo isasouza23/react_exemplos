@@ -1,11 +1,24 @@
 import styled from "styled-components";
 
 // Componente funcional Home
+  const Home = () => {
+    return (
+      <Container>
+        {/* Em react, "Wrapper é um termo comumente usado para se referir a um componente que envolve (waps) um ou mais outros componentes." */}
+        {/*Wrapper para o conteúdo de texto */}
+      <ContentWrapper>
+        <Title>Bem-vindo!</Title>
+        <Subtitle>Explore nosso site e descubra tudo o que temos a oferecer.</Subtitle>
+        <CallToAction href="#">Conheça Agora</CallToAction>
+      </ContentWrapper>
 
-
-
-
-// 3ª Digitação
+      {/*Wrapper para a imagem de destaque */}
+      <ImageWrapper>
+        <HeroImage src="https://via.placeholder.com/500x300" alt="Hero Image"/>
+      </ImageWrapper>
+      </Container>
+    );
+  };
 
 
 
