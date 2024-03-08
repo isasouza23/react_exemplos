@@ -1,4 +1,4 @@
-/* Estilos globais parsa centralizar todo o conteúdo */
+/* Estilos globais para centralizar todo o conteúdo */
 body,
 html {
   height: 100%;
@@ -6,12 +6,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fafafa;
+  background-color: #f4f4f4;
   font-family: Helvetica;
   text-align: center;
 }
 
-/*Estilo para cada quadrado*/
+/* Estilo para cada quadrado */
 .square {
   width: 100px;
   height: 100px;
@@ -24,12 +24,12 @@ html {
   cursor: pointer;
 }
 
-/* Estilo para o vencedor*/
+/* Estilo para o vencedor */
 .winner {
   background-color: #ffcc00;
 }
 
-/* Estilo para status do jogo*/
+/* Estilo para o status do jogo */
 .status {
   margin: 20px 0;
   text-align: center;
@@ -37,7 +37,7 @@ html {
   color: #333;
 }
 
-/* Estilo para o botão de reiniciar*/
+/* Estilo para o botão de reiniciar */
 .reset-button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -49,7 +49,7 @@ html {
   cursor: pointer;
 }
 
-/*Estilo para o botão de reiniciar no hover*/
+/* Estilo para o botão de reiniciar no hover */
 .reset-button:hover {
   background-color: #0056b3;
 }
