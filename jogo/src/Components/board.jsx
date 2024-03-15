@@ -16,11 +16,11 @@ const Board = () => {
     // Verifica se o quadrado já está preenchido ou se há um vencedor
     if (squares[i] || winner) return;
 
-    // Cria uma cópia do array de quadrados para evitar mutações diretas
+    // Cria uma cópia do array de quadrados para evitar mutações diretas-
     const newSquares = squares.slice();
 
     // Preenche o quadrado com "X" ou "O" com base na vez do jogador
-    newSquares[i] = xIsNext ? "X" : "O";
+    newSquares[i] = xIsNext ? "🤍" : "🎇";
 
     // Atualiza o estado dos quadrados e passa a vez para o próximo jogador
     setSquares(newSquares);
@@ -34,6 +34,9 @@ const Board = () => {
     setXIsNext(true);
   };
 
+  // Verifica se o jogo terminou em empate
+  const isDraw = squares.every(square => square !== null) && !winner;
+
   // Renderização do componente
   return (
     <div>
@@ -42,9 +45,12 @@ const Board = () => {
         {winner ? (
           // Exibe o vencedor se houver um
           <p className="winner">O vencedor é: {winner}!</p>
+        ) : isDraw ? (
+          // Exibe a mensagem de empate se o jogo terminar em empate
+          <p className="draw">O jogo terminou em empate!</p>
         ) : (
           // Exibe o próximo jogador se não houver vencedor
-          `Próximo a jogar: ${xIsNext ? "X" : "O"}`
+          `Próximo a jogar: ${xIsNext ? "🤍" : "🎇"}`
         )}
       </div>
       {/* Renderização das linhas do tabuleiro com componentes Square */}
